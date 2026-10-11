@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1426" />
+  <meta name="description" content="Nexora Digital builds modern websites, Python-powered business software, automation workflows, and dependable web infrastructure for growing businesses." />
+  <title>Nexora Digital — Development • Automation • Infrastructure</title>
+  <style>
+    :root{--bg:#0a1222;--panel:#101d32;--panel2:#13243d;--blue:#3478f6;--blue2:#69a0ff;--ink:#f5f8ff;--muted:#aab8ce;--line:rgba(174,198,232,.15);--white:#fff;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}
+    .container{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(10,18,34,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:-.04em;font-size:21px}.brandmark{width:43px;height:43px;border-radius:12px;background:var(--blue);display:grid;place-items:center;box-shadow:0 8px 30px #3478f633}.brandmark svg{width:25px;height:25px}.navlinks{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--white)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:11px;padding:12px 18px;font-size:14px;font-weight:700;transition:transform .2s,background .2s,border-color .2s;cursor:pointer}.nav-cta,.btn-primary{background:var(--blue);color:white;border:1px solid var(--blue)}.nav-cta:hover,.btn-primary:hover{background:#2466e5;transform:translateY(-2px)}.btn-secondary{border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--ink)}.btn-secondary:hover{border-color:#6a91d0;transform:translateY(-2px)}.menu-btn{display:none;background:transparent;border:1px solid var(--line);color:white;border-radius:9px;padding:8px 11px}
+    .hero{position:relative;overflow:hidden;padding:100px 0 86px;background:radial-gradient(ellipse at 80% 25%,rgba(52,120,246,.19),transparent 38%),radial-gradient(ellipse at 5% 80%,rgba(30,94,197,.12),transparent 35%)}.hero:before{content:"";position:absolute;inset:0;opacity:.17;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,black,transparent 85%);pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:64px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(105,160,255,.28);background:rgba(52,120,246,.09);border-radius:100px;padding:7px 12px;color:#b8d0ff;font-size:12px;font-weight:750;letter-spacing:.09em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#67e8b4;box-shadow:0 0 0 4px #67e8b41c}.hero h1{font-size:clamp(42px,5.2vw,68px);line-height:1.06;letter-spacing:-.055em;margin:24px 0 22px;max-width:720px}.gradient{background:linear-gradient(100deg,#fff 5%,#a8c7ff 52%,#6d9eff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{max-width:610px;font-size:18px;color:var(--muted);margin:0 0 30px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.microtrust{display:flex;align-items:center;gap:12px;margin-top:28px;color:#94a8c5;font-size:13px}.microtrust svg{color:#69a0ff;flex:none}.visual{position:relative;min-height:410px;display:grid;place-items:center}.orb{position:absolute;width:310px;height:310px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#3e82ff 0,#17479a 28%,#0b1a32 67%);filter:drop-shadow(0 0 65px #3478f633);opacity:.9}.orbit{position:absolute;width:390px;height:210px;border:1px solid #6b9eff55;border-radius:50%;transform:rotate(-29deg)}.orbit.two{transform:rotate(45deg);width:340px;height:270px;border-color:#6b9eff35}.code-card{position:relative;width:min(100%,380px);border:1px solid #7ea8f344;background:linear-gradient(140deg,rgba(21,39,67,.95),rgba(10,20,37,.96));box-shadow:0 28px 80px #0007;border-radius:17px;overflow:hidden;transform:rotate(2deg)}.code-head{display:flex;align-items:center;gap:7px;padding:14px 16px;border-bottom:1px solid var(--line);color:#9eb1cc;font-size:11px}.traffic{width:7px;height:7px;border-radius:50%;background:#7790b2}.code-title{margin-left:auto}.code-body{padding:22px 23px 24px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:2.05;color:#afc2df}.code-body .blue{color:#82b0ff}.code-body .green{color:#8de3bf}.code-body .pink{color:#e5a5ff}.code-body .indent{padding-left:18px}.status-row{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.status-pill{font:11px ui-monospace,monospace;background:#102d2b;border:1px solid #28675c;color:#9cf0d5;padding:6px 9px;border-radius:7px}
+    .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0d192b}.strip-inner{display:flex;justify-content:space-between;gap:22px;align-items:center;padding:20px 0;flex-wrap:wrap}.strip-label{color:#8094b1;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800}.strip-item{color:#b9c7db;font-size:13px;display:flex;gap:9px;align-items:center}.strip-item svg{color:#6ea0ff}
+    section{padding:92px 0}.section-head{max-width:690px;margin-bottom:38px}.kicker{color:#78a8ff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.15;letter-spacing:-.04em;margin:12px 0}.section-head p{color:var(--muted);font-size:16px;margin:0}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-card{padding:27px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(150deg,rgba(20,37,62,.88),rgba(13,25,43,.72));transition:transform .2s,border-color .2s}.service-card:hover{transform:translateY(-4px);border-color:#477fd677}.service-icon{width:47px;height:47px;display:grid;place-items:center;background:#1b3b70;border:1px solid #437ce855;border-radius:13px;color:#91b8ff;margin-bottom:21px}.service-icon svg{width:23px;height:23px}.service-card h3{font-size:19px;letter-spacing:-.02em;margin:0 0 10px}.service-card p{font-size:14px;color:var(--muted);margin:0 0 17px}.service-card ul{list-style:none;padding:0;margin:0;display:grid;gap:8px;color:#d2dced;font-size:13px}.service-card li:before{content:"✓";color:#76a8ff;margin-right:9px;font-weight:800}
+    .split{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}.split-copy h2{font-size:clamp(30px,4vw,44px);line-height:1.15;letter-spacing:-.04em;margin:12px 0 18px}.split-copy p{color:var(--muted)}.feature-list{display:grid;gap:18px;margin-top:27px}.feature{display:flex;gap:14px}.check{width:27px;height:27px;border-radius:8px;background:#163c3b;color:#80ebc6;display:grid;place-items:center;flex:none;font-weight:900}.feature strong{display:block;font-size:15px;margin-bottom:3px}.feature span{font-size:13px;color:var(--muted)}.process-panel{padding:28px;border:1px solid var(--line);background:linear-gradient(145deg,#12233b,#0c1728);border-radius:18px}.process-item{display:grid;grid-template-columns:45px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}.process-item:last-child{border:0;padding-bottom:0}.process-number{width:39px;height:39px;border-radius:11px;display:grid;place-items:center;background:#1c3e72;color:#a8c8ff;font-size:13px;font-weight:800}.process-item h3{font-size:16px;margin:0 0 4px}.process-item p{font-size:13px;color:var(--muted);margin:0}
+    .work{background:#0d192b;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.work-card{overflow:hidden;border:1px solid var(--line);border-radius:15px;background:#101e32}.work-preview{height:165px;padding:20px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#142a49,#1d4e85)}.work-preview.roof{background:linear-gradient(135deg,#172a3b,#496f85)}.work-preview.interior{background:linear-gradient(135deg,#25342d,#788c78)}.browser{width:88%;height:112px;background:#f8fafc;border-radius:8px;box-shadow:0 12px 30px #0004;overflow:hidden;color:#122139}.browserbar{height:13px;background:#e4eaf2;display:flex;align-items:center;gap:3px;padding-left:7px}.browserbar i{width:4px;height:4px;border-radius:50%;background:#9aa9bd}.mock-content{padding:13px}.mock-logo{font-size:7px;font-weight:900;letter-spacing:.08em}.mock-title{font-size:15px;font-weight:900;line-height:1.05;max-width:140px;margin:10px 0 7px}.mock-line{width:95px;height:3px;background:#c8d2e0;margin:4px 0}.mock-button{width:54px;height:12px;background:#3478f6;border-radius:3px;margin-top:8px}.work-info{padding:21px}.work-tag{font-size:10px;color:#8fb5ff;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.work-info h3{margin:8px 0 6px;font-size:18px}.work-info p{margin:0 0 16px;color:var(--muted);font-size:13px}.work-link{display:inline-flex;align-items:center;gap:7px;color:#a9c8ff;font-size:13px;font-weight:700}.work-note{margin-top:20px;color:#8fa3bf;font-size:12px}
+    .cta-band{padding:65px 0}.cta-inner{padding:43px 48px;border:1px solid #3a69ad80;border-radius:20px;background:radial-gradient(ellipse at 90% 20%,#2455a855,transparent 40%),linear-gradient(120deg,#132746,#101b30);display:flex;justify-content:space-between;align-items:center;gap:28px}.cta-inner h2{font-size:clamp(27px,3.5vw,39px);letter-spacing:-.04em;line-height:1.15;margin:0 0 10px}.cta-inner p{margin:0;color:var(--muted);max-width:590px;font-size:14px}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px}.contact-copy h2{font-size:clamp(30px,4vw,44px);line-height:1.15;letter-spacing:-.04em;margin:12px 0 15px}.contact-copy p{color:var(--muted)}.contact-detail{display:flex;gap:12px;align-items:flex-start;margin-top:25px;color:#dce7f8;font-size:14px}.contact-detail svg{color:#80acff;flex:none;margin-top:2px}.contact-detail small{display:block;color:#849ab8;font-size:12px}.contact-form{padding:27px;border:1px solid var(--line);border-radius:17px;background:#101d31}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:grid;gap:7px;margin-bottom:15px}.field label{font-size:12px;color:#c2d0e4;font-weight:700}.field input,.field textarea,.field select{width:100%;background:#0b1627;color:#f4f7ff;border:1px solid #263a57;border-radius:9px;padding:12px 13px;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:#4d88f5;box-shadow:0 0 0 3px #3478f61c}.field textarea{min-height:115px;resize:vertical}.field select option{background:#0b1627}.form-note{font-size:11px;color:#8095b3;margin:12px 0 0}.form-status{display:none;margin-top:12px;color:#a8f0d2;font-size:13px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:#8094b1;font-size:12px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.footer-brand{display:flex;align-items:center;gap:9px;color:#e8effb;font-weight:750;font-size:14px}.footer-brand .brandmark{width:28px;height:28px;border-radius:8px}.footer-brand svg{width:17px;height:17px}.footer-links{display:flex;gap:18px}.footer-links a:hover{color:white}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:30px}.hero{padding-top:74px}.visual{min-height:360px}.services-grid{grid-template-columns:repeat(2,1fr)}.split,.contact-grid{grid-template-columns:1fr;gap:36px}.work-grid{grid-template-columns:repeat(2,1fr)}.cta-inner{align-items:flex-start;flex-direction:column}.strip-inner{justify-content:flex-start}.strip-label{width:100%}}
+    @media(max-width:620px){.container{width:min(var(--max),calc(100% - 30px))}.nav{height:68px}.brand{font-size:18px}.brandmark{width:38px;height:38px}.nav-cta{display:none}.menu-btn{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:68px;background:#0c1729;border-bottom:1px solid var(--line);padding:18px 22px;flex-direction:column;align-items:flex-start;gap:16px}.navlinks.open{display:flex}.hero{padding:63px 0 58px}.hero h1{font-size:43px}.hero-copy{font-size:16px}.visual{min-height:310px;transform:scale(.92)}.orb{width:245px;height:245px}.orbit{width:300px;height:170px}.code-card{width:320px}.strip-inner{gap:13px}.strip-item{width:100%}section{padding:68px 0}.services-grid,.work-grid{grid-template-columns:1fr}.service-card{padding:23px}.work-preview{height:185px}.cta-inner{padding:29px 23px}.field-grid{grid-template-columns:1fr;gap:0}.contact-form{padding:20px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Nexora Digital home">
+      <span class="brandmark"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-5 6 5 6M16 6l5 6-5 6M14 4l-4 16"/></svg></span>
+      <span>Nexora Digital</span>
+    </a>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#approach">Our approach</a><a href="#work">Selected demos</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Development • Automation • Infrastructure</div>
+        <h1>Technology that moves your business <span class="gradient">forward.</span></h1>
+        <p class="hero-copy">We build polished websites, practical business software, and reliable digital systems—so your team can work smarter and your business can grow with confidence.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Discuss your project <span>↗</span></a>
+          <a class="btn btn-secondary" href="#services">Explore services <span>↓</span></a>
+        </div>
+        <div class="microtrust"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 7.8 7.5 9.5 4.3-1.7 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg> Clear communication · Practical solutions · Ongoing support</div>
+      </div>
+      <div class="visual" aria-label="Illustration of a digital development workspace">
+        <div class="orb"></div><div class="orbit"></div><div class="orbit two"></div>
+        <div class="code-card">
+          <div class="code-head"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="code-title">nexora / solution.py</span></div>
+          <div class="code-body">
+            <div><span class="pink">class</span> <span class="blue">BusinessGrowth</span>:</div>
+            <div class="indent"><span class="pink">def</span> build(self, idea):</div>
+            <div class="indent" style="padding-left:36px">solution = {</div>
+            <div class="indent" style="padding-left:54px"><span class="green">"web"</span>: <span class="green">"beautiful + fast"</span>,</div>
+            <div class="indent" style="padding-left:54px"><span class="green">"software"</span>: <span class="green">"built for you"</span>,</div>
+            <div class="indent" style="padding-left:54px"><span class="green">"systems"</span>: <span class="green">"reliable"</span></div>
+            <div class="indent" style="padding-left:36px">}</div>
+            <div class="indent" style="padding-left:36px"><span class="pink">return</span> solution</div>
+            <div class="status-row"><span class="status-pill">● READY TO BUILD</span><span class="status-pill">v1.0 / YOUR IDEA</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip"><div class="container strip-inner">
+    <div class="strip-label">How we help</div>
+    <div class="strip-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8m-4-3v3"/></svg> Websites that win trust</div>
+    <div class="strip-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4h8l4 4v12H4V4h4"/><path d="M8 2v5m8-5v5M8 12h8m-8 4h5"/></svg> Software that fits your workflow</div>
+    <div class="strip-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4m0 10v4M3 12h4m10 0h4M5.6 5.6l2.8 2.8m7.2 7.2 2.8 2.8m0-12.8-2.8 2.8m-7.2 7.2-2.8 2.8"/></svg> Dependable technical support</div>
+  </div></div>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head"><div class="kicker">What we do</div><h2>Digital services, built around your business.</h2><p>From your first online presence to the systems running behind it, get the technical help you need in one place.</p></div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M8 13h3m-3 3h8"/></svg></div><h3>Web Design & Development</h3><p>Modern, responsive websites that explain what you do and make it easy for customers to take action.</p><ul><li>Business websites & landing pages</li><li>Website redesigns and UI fixes</li><li>Mobile-friendly layouts</li><li>SEO foundations and integrations</li></ul></article>
+        <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M8 20H5a2 2 0 0 1-2-2v-3m13 5h3a2 2 0 0 0 2-2v-3"/><path d="m9 9-3 3 3 3m6-6 3 3-3 3m-2-7-2 8"/></svg></div><h3>Python & Backend Engineering</h3><p>Custom applications and backend functionality designed around real business requirements.</p><ul><li>Python and Django development</li><li>REST APIs and integrations</li><li>Database design and workflows</li><li>Bug fixes and feature development</li></ul></article>
+        <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4m0 10v4M3 12h4m10 0h4M5.6 5.6l2.8 2.8m7.2 7.2 2.8 2.8m0-12.8-2.8 2.8m-7.2 7.2-2.8 2.8"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Business Automation & CRM</h3><p>Reduce repetitive work and connect the tools your team already uses.</p><ul><li>Workflow and task automation</li><li>CRM features and custom modules</li><li>CSV, API and system integrations</li><li>Operational dashboards</li></ul></article>
+        <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 7.8 7.5 9.5 4.3-1.7 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>SSL, DNS & Website Reliability</h3><p>Get help resolving common deployment and website availability issues.</p><ul><li>SSL certificate setup and renewal</li><li>DNS records and domain routing</li><li>Hosting and deployment support</li><li>Website troubleshooting</li></ul></article>
+        <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M7 19v2m10-2v2M8 8h8M8 12h4"/></svg></div><h3>IT & Infrastructure Support</h3><p>Practical technical assistance for the systems and services your business relies on.</p><ul><li>Server and application troubleshooting</li><li>Web server and reverse proxy setup</li><li>Basic network and deployment support</li><li>Maintenance and documentation</li></ul></article>
+        <article class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 12h5M8 15h8"/><path d="m16 2 2 3-2 3"/></svg></div><h3>Agency Development Partner</h3><p>Extra implementation capacity for agencies that need a dependable technical partner.</p><ul><li>White-label website development</li><li>Overflow fixes and feature work</li><li>Backend and integration support</li><li>Clear, collaborative handoffs</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="container split">
+      <div class="split-copy"><div class="kicker">Why Nexora Digital</div><h2>A practical partner from first idea to launch.</h2><p>You don't need a complicated process or unnecessary technology. You need someone who understands the problem, explains the options, and gets the work done with care.</p>
+        <div class="feature-list">
+          <div class="feature"><div class="check">✓</div><div><strong>Solutions for your actual needs</strong><span>We focus on useful features, maintainable builds, and outcomes—not complexity for its own sake.</span></div></div>
+          <div class="feature"><div class="check">✓</div><div><strong>One clear point of contact</strong><span>Direct communication, clear scope, and practical updates throughout the project.</span></div></div>
+          <div class="feature"><div class="check">✓</div><div><strong>Support beyond the launch</strong><span>From fixes to improvements, get help keeping your digital setup working well.</span></div></div>
+        </div>
+      </div>
+      <div class="process-panel">
+        <div class="kicker">A simple process</div>
+        <div class="process-item"><div class="process-number">01</div><div><h3>Understand</h3><p>We discuss your goal, current setup, priorities, and constraints.</p></div></div>
+        <div class="process-item"><div class="process-number">02</div><div><h3>Plan</h3><p>You get a clear scope, recommended approach, and agreed next steps.</p></div></div>
+        <div class="process-item"><div class="process-number">03</div><div><h3>Build & test</h3><p>We implement the solution and check the key user flows and functionality.</p></div></div>
+        <div class="process-item"><div class="process-number">04</div><div><h3>Launch & improve</h3><p>We help with handover and identify sensible next improvements.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head"><div class="kicker">Selected website demos</div><h2>See the kind of experience we can create.</h2><p>A few concept builds demonstrating responsive layouts and different business styles. Open a demo to explore it.</p></div>
+      <div class="work-grid">
+        <article class="work-card"><div class="work-preview roof"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-logo">PRESTIGE ROOFING</div><div class="mock-title">Built to protect.<br>Made to last.</div><div class="mock-line"></div><div class="mock-line" style="width:75px"></div><div class="mock-button"></div></div></div></div><div class="work-info"><div class="work-tag">Home services</div><h3>Roofing business website</h3><p>A clear service-led layout with strong calls to action for a local contractor.</p><a class="work-link" href="https://darrssh.github.io/Prestige_Roofing/" target="_blank" rel="noopener noreferrer">View demo <span>↗</span></a></div></article>
+        <article class="work-card"><div class="work-preview"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-logo">AKASH ROOFING</div><div class="mock-title">Quality roofing.<br>Trusted service.</div><div class="mock-line"></div><div class="mock-line" style="width:65px"></div><div class="mock-button"></div></div></div></div><div class="work-info"><div class="work-tag">Business website</div><h3>Akash Roofing concept</h3><p>A focused landing page concept built to present services and encourage enquiries.</p><a class="work-link" href="https://darrssh.github.io/akashroofing/" target="_blank" rel="noopener noreferrer">View demo <span>↗</span></a></div></article>
+        <article class="work-card"><div class="work-preview interior"><div class="browser"><div class="browserbar"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-logo">THE KARI GHARS</div><div class="mock-title">Spaces with<br>character.</div><div class="mock-line"></div><div class="mock-line" style="width:75px"></div><div class="mock-button"></div></div></div></div><div class="work-info"><div class="work-tag">Interior design</div><h3>Interior design concept</h3><p>A refined visual direction for a design-led business and its portfolio.</p><a class="work-link" href="https://darrssh.github.io/TheKariGhars/" target="_blank" rel="noopener noreferrer">View demo <span>↗</span></a></div></article>
+      </div>
+      <p class="work-note">These are demo/concept links, not a claim that the businesses listed are Nexora Digital clients. Replace or add projects as you publish approved portfolio work.</p>
+    </div>
+  </section>
+
+  <div class="cta-band"><div class="container"><div class="cta-inner"><div><h2>Have a project in mind?</h2><p>Tell us what you're trying to build, fix, or improve. We'll take it from there with a practical next step.</p></div><a class="btn btn-primary" href="#contact">Start a conversation <span>↗</span></a></div></div></div>
+
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy"><div class="kicker">Get in touch</div><h2>Let’s make your next move a smart one.</h2><p>Share a little about your project and what you need help with. The more context you provide, the easier it is to recommend a useful next step.</p>
+        <div class="contact-detail"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg><div><strong>Bengaluru, India</strong><small>Working with businesses and agencies remotely</small></div></div>
+        <div class="contact-detail"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg><div><strong>Remote-friendly collaboration</strong><small>For teams in India and overseas</small></div></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="field-grid"><div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Jane Smith" required /></div><div class="field"><label for="email">Work email *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required /></div></div>
+        <div class="field"><label for="service">What do you need help with?</label><select id="service" name="service"><option>Website design or development</option><option>Python / Django / API development</option><option>CRM or workflow automation</option><option>SSL, DNS, hosting or deployment</option><option>IT infrastructure support</option><option>White-label / agency partnership</option><option>Something else</option></select></div>
+        <div class="field"><label for="message">Project details *</label><textarea id="message" name="message" placeholder="What are you trying to build, fix, or improve?" required></textarea></div>
+        <button class="btn btn-primary" type="submit">Prepare project enquiry <span>↗</span></button>
+        <p class="form-note">This starter form opens your email app to send the enquiry. Before publishing, set your real business email in the configuration near the bottom of this file.</p>
+        <p class="form-status" id="formStatus" role="status">Your email draft is ready. Review it and send from your email app.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container footer-inner">
+  <a class="footer-brand" href="#home"><span class="brandmark"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-5 6 5 6M16 6l5 6-5 6M14 4l-4 16"/></svg></span>Nexora Digital</a>
+  <span>© <span id="year"></span> Nexora Digital. Technology that moves your business forward.</span>
+  <div class="footer-links"><a href="#services">Services</a><a href="#work">Demos</a><a href="#contact">Contact</a></div>
+</div></footer>
+<script>
+  // TODO before launch: replace with the real inbox that should receive project enquiries.
+  const BUSINESS_EMAIL = "REPLACE_WITH_YOUR_BUSINESS_EMAIL";
+  const menuBtn = document.getElementById("menuBtn");
+  const navlinks = document.getElementById("navlinks");
+  menuBtn.addEventListener("click", () => {
+    const open = navlinks.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    menuBtn.textContent = open ? "✕" : "☰";
+  });
+  navlinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+    navlinks.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
+  }));
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("contactForm").addEventListener("submit", event => {
+    event.preventDefault();
+    if (BUSINESS_EMAIL === "REPLACE_WITH_YOUR_BUSINESS_EMAIL") {
+      alert("Before using this form, open index.html and replace BUSINESS_EMAIL with your real business email address.");
+      return;
+    }
+    const data = new FormData(event.currentTarget);
+    const subject = encodeURIComponent("Nexora Digital project enquiry — " + data.get("service"));
+    const body = encodeURIComponent(
+      "Name: " + data.get("name") + "\nEmail: " + data.get("email") +
+      "\nService: " + data.get("service") + "\n\nProject details:\n" + data.get("message")
+    );
+    document.getElementById("formStatus").style.display = "block";
+    window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
+  });
+</script>
+</body>
+</html>
